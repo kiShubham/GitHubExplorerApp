@@ -1,0 +1,31 @@
+.navbar {
+  width: 80vw;
+  /* height: 40px; */
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 40px;
+  border-radius: 10px;
+  align-items: center;
+  background-color: rgb(255, 255, 255, 0.5);
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-radius: 10px;
+  padding: 5px 25px;
+  /* background-color: rgb(255, 0, 127, 0.7); */
+  background-color: rgb(96, 63, 239);
+  box-shadow: 0 0.5px 1rem 0 rgba(96, 63, 239, 0.8);
+  backdrop-filter: blur(15px);
+  font-weight: 600;
+  color: white;
+  font-size: 25px;
+  line-height: 0.7em;
+}
+.logo p {
+  margin: 0;
+}
+.logo img {
+  width: 30px;
+}
