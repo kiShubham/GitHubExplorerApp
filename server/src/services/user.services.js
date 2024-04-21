@@ -3,7 +3,8 @@ const User = require("../models/user.model");
 const register = async (data) => {
   try {
     const check = await search({ username: data.username });
-    if (check) return check;
+    if (check) return check; //always return , so ultimately we are not saving , beacause the mongodb is giving an error:E11000 duplicate key error collection: test.users index: username_1 dup key
+    // if (check.length) return check;
     const user = await User.create(data);
     return user;
   } catch (error) {
