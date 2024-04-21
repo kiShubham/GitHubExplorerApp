@@ -1,0 +1,44 @@
+.userPanel {
+  width: 370px;
+  border-radius: 18px;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 1px 1px 5px 0 rgb(0, 0, 0, 0.2);
+}
+
+.avatarParent img {
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  border: 5px dotted #e65e5e;
+  border: 3px solid rgb(96, 63, 239);
+  padding: 5px;
+  margin-top: 20px;
+}
+.userInfo {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 20px;
+}
+.userDetail {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  align-items: flex-start;
+  border-radius: 15px;
+  padding: 10px;
+  background-color: rgba(96, 63, 239, 0.8);
+}
+.userDetail p {
+  margin: 0;
+}
+.userDetail p:first-child {
+  align-self: center;
+}
+.bio {
+  align-self: center;
+  overflow: hidden;
+  width: 330px;
+  height: 20px;
+}
