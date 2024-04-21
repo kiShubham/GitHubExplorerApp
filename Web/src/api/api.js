@@ -65,13 +65,14 @@ export const fetchuser = async (username) => {
         friendsArray: friendsData,
         repoUrl: userData.repos_url,
       };
-
+      /* 
       const res = await axios.post(
         `${BACKEND_ENDPOINT}/api/save-user/${username}`,
         newUserData
       );
-
-      console.log(res.status); // 201 new saved ; 200 just fetched preexisting ;success
+      database is not working ,giving error , check user.services for detail ;
+ */
+      // console.log(res); // 201 new saved ; 200 just fetched preexisting ;success
 
       return { newUserData };
     }
@@ -81,8 +82,6 @@ export const fetchuser = async (username) => {
     return error;
   }
 };
-// console.log("hi");
-fetchuser("kissfdfdfd", false);
 
 //====================================>
 export const fetchRepoArray = async (repoUrl) => {
@@ -91,7 +90,7 @@ export const fetchRepoArray = async (repoUrl) => {
 
     return res.data;
   } catch (error) {
-    console.error(error.message);
+    // console.error(error.message);
     return error.response;
   }
 };
